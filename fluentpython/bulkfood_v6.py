@@ -1,11 +1,14 @@
 import model_v6 as model
 
 
+@model.entity
 class LineItem:
+    description = model.NoneBlank()
     weight = model.Quantity()
     price = model.Quantity()
 
-    def __init__(self, weight, price):
+    def __init__(self, description, weight, price):
+        self.description = description
         self.weight = weight
         self.price = price
 
