@@ -1,3 +1,8 @@
+"""
+官方文档[pep-3115]： https://www.python.org/dev/peps/pep-3115/#invoking-the-metaclass
+博客文章: https://www.cnblogs.com/telecomshy/p/9228269.html
+"""
+
 
 class member_table(dict):
 
