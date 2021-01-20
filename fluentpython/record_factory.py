@@ -25,4 +25,3 @@ def record_factory(cls_name, field_names):
                      __repr__=__repr__)
 
     return type(cls_name, (object,), cls_attrs)
-
