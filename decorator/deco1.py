@@ -1,3 +1,6 @@
+"""
+函数装饰器带参数
+"""
 from functools import wraps
 
 

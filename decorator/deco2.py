@@ -33,15 +33,17 @@ class Spam:
         print(self, x)
 
 
-"""
-使用 nonlocal 变量的替代方案
-"""
 def profiled(func):
+    """
+    使用 nonlocal 变量的替代方案
+    """
     ncalls = 0
+
     @wraps(func)
     def wrapper(*args, **kwargs):
         nonlocal ncalls
         ncalls += 1
         return func(*args, **kwargs)
+
     wrapper.ncalls = lambda: ncalls
     return wrapper
