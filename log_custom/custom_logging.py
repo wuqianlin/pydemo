@@ -11,7 +11,7 @@ import traceback
 
 
 BASE_DIR = os.path.abspath(os.getcwd())
-LOG_DIR = os.path.join(BASE_DIR,  "logs")
+LOG_DIR = os.path.join(BASE_DIR, "../tmp/logs")
 
 host_ip = "localhost"
 
