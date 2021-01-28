@@ -1,4 +1,6 @@
-# coding: utf-8
+"""
+https://docs.python.org/zh-cn/3/library/threading.html#lock-objects
+"""
 import threading
 import time
 import random
