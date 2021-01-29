@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package inspect;
+
+service SystemInspect {
+  rpc port_is_open (PortCheckRequest) returns (PortCheckReply) {}
+}
+
+message PortCheckRequest {
+  string ip = 1;
+  uint32 port = 2;
+}
+
+message PortCheckReply {
+  bool result = 1;
+}
