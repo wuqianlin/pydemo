@@ -1,6 +1,7 @@
 """
 python 标准库 glob
 glob 文件名模式匹配，不用遍历整个目录判断每个文件是否符合匹配模式
+reference: https://blog.csdn.net/gufenchen/article/details/90723418
 """
 import glob
 
