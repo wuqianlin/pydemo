@@ -31,7 +31,7 @@ for i in range(20):
     file.seek(0)
     file.write(str(counter))
     print(os.getpid(), "=>", counter)
-    time.sleep(10)
+    time.sleep(2)
     file.close()  # unlocks the file
     print('release lock')
     time.sleep(3)
